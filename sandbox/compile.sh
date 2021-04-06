@@ -1,0 +1,1 @@
+emcc factory.c -o factory.wasm --no-entry -Oz -s STANDALONE_WASM=1 -s MALLOC='emmalloc' -s FILESYSTEM=0 -s ERROR_ON_UNDEFINED_SYMBOLS=0 -s ASSERTIONS=0 -s ALLOW_MEMORY_GROWTH=1 -s USE_SDL=0 -s EVAL_CTORS=0 -s ASYNCIFY=1 -s ASYNCIFY_IMPORTS=["async_test_fn"]
